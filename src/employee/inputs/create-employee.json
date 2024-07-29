@@ -1,0 +1,10 @@
+{
+  "operation": "command",
+  "eventName": "CREATE_EMPLOYEE",
+  "payload": {
+    "name": "Muhammad Ibrahim",
+    "designation": "Senior Software Engineer",
+    "department": "MAX",
+    "reportingManager": "Saad Salman"
+  }
+}

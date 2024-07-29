@@ -1,0 +1,7 @@
+{
+  "operation": "query",
+  "eventName": "LIST_EMPLOYEE_BY_ID",
+  "payload": {
+    "id": 1
+  }
+}

@@ -1,6 +1,5 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
-import { CreateEmployeeDto } from './dto/create-employee.dto';
-import { UpdateEmployeeDto } from './dto/update-employee.dto';
+import { Injectable } from '@nestjs/common';
+import { EmployeeDto } from './dto/create-employee.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Employee } from './entities/employee.entity';
 import { Repository } from 'typeorm';
@@ -12,8 +11,8 @@ export class EmployeeService {
     private readonly employeeRepositry: Repository<Employee>,
   ) {}
 
-  create(createEmployeeDto: CreateEmployeeDto) {
-    return this.employeeRepositry.save(createEmployeeDto);
+  create(empData: EmployeeDto) {
+    return this.employeeRepositry.save(empData);
   }
 
   getEmployees() {
@@ -24,8 +23,8 @@ export class EmployeeService {
     return this.employeeRepositry.findOneBy({ id });
   }
 
-  updateEmployeeById(id: number, updateEmployeeDto: UpdateEmployeeDto) {
-    return this.employeeRepositry.update(id, updateEmployeeDto);
+  updateEmployeeById(id: number, data: any) {
+    return this.employeeRepositry.update(id, data);
   }
 
   deleteEmployee(id: number) {

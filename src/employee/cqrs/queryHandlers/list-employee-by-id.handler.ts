@@ -9,7 +9,7 @@ export class ListEmployeeByIdHandler
   constructor(private readonly employeeService: EmployeeService) {}
 
   execute(query: ListEmployeeByIdQuery): Promise<any> {
-    const { id } = query;
+    const { id } = query.event;
     return this.employeeService.getEmployeeById(id);
   }
 }

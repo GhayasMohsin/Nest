@@ -6,12 +6,10 @@ import { EmployeeService } from 'src/employee/employee.service';
 export class CreateEmployeeHandler
   implements ICommandHandler<CreateEmployeeCommand>
 {
-  constructor(
-    private readonly employeeService: EmployeeService,
-  ) {}
+  constructor(private readonly employeeService: EmployeeService) {}
 
   execute(command: CreateEmployeeCommand): Promise<any> {
-    const { employee } = command;
-    return this.employeeService.create(employee);
+    const { data } = command;
+    return this.employeeService.create(data);
   }
 }

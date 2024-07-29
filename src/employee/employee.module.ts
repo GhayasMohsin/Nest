@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { EmployeeController } from './employee.controller';
+import { Shared } from './shared-service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Employee } from './entities/employee.entity';
 import { CqrsModule } from '@nestjs/cqrs';
@@ -12,7 +12,7 @@ import { EmployeeService } from './employee.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Employee]), CqrsModule],
-  controllers: [EmployeeController],
+  controllers: [Shared],
   providers: [
     CreateEmployeeHandler,
     UpdateEmployeeHandler,

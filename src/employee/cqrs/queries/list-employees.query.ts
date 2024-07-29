@@ -1,1 +1,1 @@
-export class ListEmployeesQuery{}
+export class ListEmployeesQuery {}

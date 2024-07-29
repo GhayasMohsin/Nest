@@ -1,0 +1,13 @@
+{
+  "operation": "command",
+  "eventName": "UPDATE_EMPLOYEE",
+  "payload": {
+    "id": 1,
+    "data": {
+      "name": "Muhammad Ibrahim",
+      "designation": "Senior Software Engineer",
+      "department": "MAX",
+      "reportingManager": "Saad Salman"
+    }
+  }
+}

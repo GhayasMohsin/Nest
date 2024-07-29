@@ -9,7 +9,7 @@ export class DeleteEmployeeHandler
   constructor(private readonly employeeService: EmployeeService) {}
 
   execute(command: DeleteEmployeeCommand): Promise<any> {
-    const { id } = command;
+    const {id} = command.event
     return this.employeeService.deleteEmployee(id);
   }
 }

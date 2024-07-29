@@ -9,7 +9,7 @@ export class UpdateEmployeeHandler
   constructor(private readonly employeeService: EmployeeService) {}
 
   execute(command: UpdateEmployeeCommand): Promise<any> {
-    const {id, empData} = command
-    return this.employeeService.updateEmployeeById(id, empData)
+    let { id, data } = command.requestEvent;
+    return this.employeeService.updateEmployeeById(id, data);
   }
 }

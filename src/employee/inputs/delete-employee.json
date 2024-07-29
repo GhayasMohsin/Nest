@@ -1,0 +1,7 @@
+{
+  "operation": "command",
+  "eventName": "DELETE_EMPLOYEE",
+  "payload": {
+    "id": 10
+  }
+}
