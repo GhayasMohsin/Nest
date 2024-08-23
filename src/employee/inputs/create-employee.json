@@ -1,10 +1,15 @@
 {
-  "operation": "command",
-  "eventName": "CREATE_EMPLOYEE",
-  "payload": {
-    "name": "Muhammad Ibrahim",
-    "designation": "Senior Software Engineer",
-    "department": "MAX",
-    "reportingManager": "Saad Salman"
-  }
+  "requestId": "7e1e11ec-a8be-48ab-a4b8-14a90fce3f3f",
+  "inputs": [
+    {
+      "operation": "command",
+      "eventName": "CREATE_EMPLOYEE",
+      "payload": {
+        "name": "Muhammad Ibrahim",
+        "designation": "Senior Software Engineer",
+        "department": "MAX",
+        "reportingManager": "Saad Salman"
+      }
+    }
+  ]
 }

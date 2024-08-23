@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "demo",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "runtimeArgs": ["-r","ts-node/register"],
+            "args": [
+                "debugger/__debug_lambda.ts",
+                "create-employee"
+            ]
+        }
+    ]
+}
